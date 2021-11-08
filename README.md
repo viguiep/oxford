@@ -1,3 +1,13 @@
+Normalement, cela permet d'avoir la démo Streamlit accessible depuis www.joodl.com
+
+PRINCIPE:
+- Github Pages => index.html
+- iframe dans index.html => renvoi vers le site de Streamlit https://share.streamlit.io/viguiep/streamlit_test/main/nlp.py
+- creation d'un CNAME via Github Pages (fichier à la racine du répertoire, nommé CNAME, et contenant l'url de destination, ici www.joodl.com)
+- dans Namebay (par exemple): Host = www, type = CNAME, priority = 10, hostname = viguiep.github.io.)
+
+Remarque: un redirect dans Namebay vers un sous-répertoire (comme l'url de Streamlit) ne marche pas.
+
 NLP test - 
 Accessible at https://viguiep.github.io/oxford/
 
